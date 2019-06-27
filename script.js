@@ -106,6 +106,18 @@ $(document).ready(function(){
         $("body").css( "background-color", "#eee"); 
     });
 });
+
+$(document).ready(function() {
+    $("#button_effects1").click(function(){
+            $('#button_effects1').hide('fast');
+
+        });
+        
+        $("#button_effects2").click(function(){
+            $('#button_effects2').fadeOut('fast');
+
+        });
+}); 
 		
 		
 		
