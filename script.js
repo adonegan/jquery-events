@@ -23,10 +23,7 @@ $(document).ready(function() {
 //waits until page is loaded first
 $(document).ready(function(){
 
-    //applies colour red to paragraphs when clicked on 
-    $("p").click(function(){
-        $("p").css("background-color", "#FF0000");
-    });
+   
 
     //will add lightblue to h2 elements
     $("h2").hover(function(){
@@ -105,19 +102,26 @@ $(document).ready(function(){
     $(".bottom_button").mouseleave(function(){
         $("body").css( "background-color", "#eee"); 
     });
-});
 
-$(document).ready(function() {
+
+
+	
     $("#button_effects1").click(function(){
-            $('#button_effects1').hide('fast');
-
-        });
-        
-        $("#button_effects2").click(function(){
-            $('#button_effects2').fadeOut('fast');
-
-        });
-}); 
-		
-		
-		
+        $('#par1').slideToggle('1000');
+    });
+    $("#button_effects2").click(function(){
+        $('#par2').slideToggle('1000');
+    });
+    $("#button_effects3").click(function(){
+        $('#par3').slideToggle('1000');
+    });
+    $("#button_effects4").click(function(){
+        $('#par4').slideToggle('1000');
+    });
+    $("#button_effects5").click(function(){
+        $('#par5').slideToggle('1000');
+    });
+    $("#button_effects6").click(function(){
+        $('#par6').slideToggle('1000');
+    });
+});
